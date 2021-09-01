@@ -266,34 +266,12 @@ body {
 }
 .galery__block--01 {
   position: relative;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.galery__block--01:hover {
-  transform: scale(1.25);
 }
 .galery__block--03 {
   position: relative;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.galery__block--03:hover {
-  transform: scale(1.2);
 }
 .galery__block--04 {
   position: relative;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.galery__block--04:hover {
-  transform: scale(1.2);
-}
-.galery__block--02 {
-  transition: 0.4s;
-  cursor: pointer;
-}
-.galery__block--02:hover {
-  transform: scale(1.2);
 }
 .galery__name {
   font-family: 'Open Sans Condensed';
