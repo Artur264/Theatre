@@ -3,11 +3,22 @@
     justify-content: space-between;
     align-items: center;
     .list-reset;
-    margin-bottom: 191px
+    margin-bottom: 191px;
+    flex-wrap: wrap;
+
+    @media  (max-width: @small) {
+        .list-reset;
+        display: none;
+    }
+
 }
 
 .navigation__item {
     margin-right: 63px;
+
+    @media  (max-width: @small) {
+        margin-bottom: 15px;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -15,9 +26,11 @@
 
     &-active {
         position: relative;
-    }
 
-    
+        @media  (max-width: @small) {
+            display: none;
+        }
+    }
 }
 
 

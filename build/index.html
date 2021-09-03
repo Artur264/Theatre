@@ -13,6 +13,15 @@
     <header class="header">
         <div class="header__top">
             <div class="header__wrapper wrapper">
+                <button class="header__burger">
+                    <svg class="burger__icon" width="20" height="20">
+                        <use xlink:href="./img/sprite.svg#burger__icon"></use>
+                    </svg>
+                    <a href="tel: +7 495 123-45-67" class="header__telefon">
+                        +7 495 123-45-67
+                    </a>
+                </button>
+
                 <nav class="header__navigation navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
@@ -47,7 +56,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <div class="header_information">
                     <div class="header_information-content">
                         <h2 class="header_information-title">
@@ -65,7 +73,8 @@
                         </button>
                     </div>
                     <div class="header__image">
-                        <img src="./img/header__content-img.png" alt="#" class="header__information-img">
+                        <img src="./img/header__content-img.png" alt="#" width="350" height="490"
+                            class="header__information-img">
                     </div>
                 </div>
             </div>
@@ -79,7 +88,7 @@
                         о театре
                     </h2>
                 </div>
-                <div class="about_bot">
+                <div class="about__bot">
                     <div class="about__content">
                         <h2 class="about__content-title">
                             Самый лучший театр СПБ
@@ -100,19 +109,25 @@
                         <h2 class="about__information-titls">
                             немного о цифрах
                         </h2>
-                        <svg class="header__icon" width="61" height="70">
-                            <use xlink:href="./img/sprite.svg#header__icon"></use>
-                        </svg>
-                        <p class="about__information-info">
-                            <span class="about__information-info--color"> 1600</span> посадочный
-                            мест
-                        </p>
-                        <svg class="header__icon4" width="70" height="64">
-                            <use xlink:href="./img/sprite.svg#header__icon4"></use>
-                        </svg>
-                        <p class="about__information-info2">
-                            <span class="about__information-info2--color"> 350</span> лет истории
-                        </p>
+                        <div class="about__info">
+                            <div class="info__content">
+                                <svg class="about__icon" width="61" height="70">
+                                    <use xlink:href="./img/sprite.svg#header__icon"></use>
+                                </svg>
+                                <p class="about__information-info">
+                                    <span class="about__information-info--color"> 1600</span> посадочный
+                                    мест
+                                </p>
+                            </div>
+                            <div class="info__content">
+                                <svg class="about__icon4" width="70" height="64">
+                                    <use xlink:href="./img/sprite.svg#header__icon4"></use>
+                                </svg>
+                                <p class="about__information-info2">
+                                    <span class="about__information-info2--color"> 350</span> лет истории
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <img src="./img/about__img.png" alt="#" width="350" height="292" class="about__img">
                 </div>
@@ -198,22 +213,22 @@
                     <svg class="company__icon" width="200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width=" 200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width=" 200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width="200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width="200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width="200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
-                    <svg class="company__icon" width="200" height="96">
+                    <svg class="company__icon company__icon--active" width="200" height="96">
                         <use xlink:href="./img/sprite.svg#company__icon"></use>
                     </svg>
                 </div>
@@ -255,19 +270,19 @@
                                 <label for="#" class="contact__form-label">
                                     <input type="text" name="Имя" placeholder="Имя" class="contact__form-input ">
                                 </label>
-                                <label for="#">
+                                <label for="#" class="contact__form-label">
                                     <input type="text" name="Компания" placeholder="Компания"
                                         class="contact__form-input">
                                 </label>
-                                <label for="#">
+                                <label for="#" class="contact__form-label">
                                     <input type="text" name="Сообщение" placeholder="Сообщение"
                                         class="contact__form-input ">
                                 </label>
-                                <label for="#">
+                                <label for="#" class="contact__form-label">
                                     <input type="E-mail" name="E-mail" placeholder="E-mail" class="contact__form-input">
                                 </label>
                             </form>
-                            <label for="#">
+                            <label for="#" class="contact__form-label">
                                 <input type="tel" name="Телефон" placeholder="Телефон"
                                     class="contact__form-input contact__form-input--active">
                             </label>

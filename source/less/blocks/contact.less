@@ -1,6 +1,11 @@
 .contact__wrapper {
+    flex-wrap: wrap;
     padding-bottom: 80px;
     border-bottom: 1px solid #565656;
+
+    @media  (max-width: @small) {
+       padding-bottom: 60px;
+    }
 }
 
 .contact__title {
@@ -18,15 +23,31 @@
     &-active {
         color: #D1A954;
     }
+
+    @media  (max-width: @small) {
+        display: flex;
+        justify-content: center;
+        font-size: 42px;
+    }
 }
 
 .contact__information {
     display: flex;
     justify-content: space-between;
+
+    @media  (max-width: @small) {
+        display: flex;
+        
+    }
 }
 
 .contact__left {
+    flex-wrap: wrap;
     margin-right: 125px;
+
+    @media  (max-width: @small) {
+        display: none;
+    }
 }
 
 .contact__list {
@@ -58,11 +79,21 @@
 .contact__content {
     display: flex;
     flex-wrap: wrap;
+
+    @media  (max-width: @small) {
+        justify-content: center;
+    }
+
 }
 
 .contact__right {
-    display: flex;
-    
+    display: flex;  
+
+    @media  (max-width: @small) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }  
 }
 
 .contact__form {
@@ -71,8 +102,22 @@
     justify-content: space-between;
     margin-right: 100px;
     
-    label {
+    &-label {
         max-height: 35px;
+
+        @media  (max-width: @small) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            max-height: none;
+            
+    }
+}
+
+    @media  (max-width: @small) {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0;
     }
 }
 
@@ -109,6 +154,12 @@
     color: #989898;
     max-width: 390px;
     margin-right: 150px;
+
+    @media  (max-width: @small) {
+        margin-right: 0;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
 }
 
 .contact__btn {
@@ -138,6 +189,7 @@
             color: #fff;
         outline: 0;
         }
+
     }
     
 

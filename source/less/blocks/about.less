@@ -1,7 +1,12 @@
 .about__top {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 100px;
+
+    @media  (max-width: @small) {
+        margin-bottom: 60px;
+    }
 }
 
 .about__top-title {
@@ -21,18 +26,28 @@
     }
 }
 
-.about_bot {
+.about__bot {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 150px;
+
+    @media  (max-width: @small) {
+        justify-content: center;
+        margin-bottom: 80px;
+    }
 }
 
 .about__content {
     margin-right: 30px;
+
+    @media  (max-width: @small) {
+        margin-right: 0;
+    }
 }
 
 .about__content-title {
-    font-family: Open Sans Condensed;
+    font-family: @Open;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -43,6 +58,11 @@
     text-transform: uppercase;
     color: @light;
     margin-bottom: 40px;
+
+    @media  (max-width: @small) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .about__content-text {
@@ -54,11 +74,24 @@
     letter-spacing: 0em;
     text-align: left;  
     color: @light;
-    width: 445px;
+    max-width: 445px;
+
+    @media  (max-width: @small) {
+       max-width: 330px;
+       text-align: center;
+       margin-bottom: 27px;
+    }
 }
 
 .about__information {
     margin-right: 30px;
+
+    @media  (max-width: @small) {
+    display: flex;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 }
 
 .about__information-titls {
@@ -75,8 +108,22 @@
     margin-bottom: 40px;
 }
 
-.header__icon {
+.about__info {
+    @media  (max-width: @small) {
+        display: flex;
+    }
+}
+
+.info__content {
+    @media  (max-width: @small) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.about__icon {
     margin-bottom: 15px;
+
 }
 
 .about__information-info {
@@ -97,8 +144,14 @@
     }
 }
 
-.header__icon4 {
+.about__icon4 {
     margin-bottom: 17px;
+
+    @media  (max-width: @small) {
+        max-height: 53px;
+        margin-bottom: 0;
+    }
+
 }
 
 .about__information-info2 {
@@ -113,8 +166,19 @@
     letter-spacing: 0.05em;
     color: @light;
 
+    @media  (max-width: @small) {
+        max-width: 119px;
+        max-height: 17px;
+    }
+
 
     &--color {
         color: #D1A954;
+    }
+}
+
+.about__img {
+    @media  (max-width: @small) {
+        display: none;
     }
 }

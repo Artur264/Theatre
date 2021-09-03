@@ -11,16 +11,30 @@
     color: @light;
     margin-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     &-active {
         color: #D1A954;
     }
+
+    @media  (max-width: @small) {
+        max-width: 344px;
+        max-height: 65px;
+        font-size: 37px;
+        margin-bottom: 60px;
+    }
 }
 
 .galery__content {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 150px;
+
+    @media  (max-width: @small) {
+        justify-content: center;
+        margin-bottom: 80px;
+    }
 }
 
 .galery__block {
